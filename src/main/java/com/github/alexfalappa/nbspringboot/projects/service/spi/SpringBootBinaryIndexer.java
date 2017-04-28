@@ -24,10 +24,6 @@ import org.netbeans.modules.parsing.spi.indexing.Context;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
-/**
- *
- * @author Alessandro Falappa
- */
 @ConstrainedBinaryIndexer.Registration(
         mimeType = "text/x-json",
         requiredResource = "META-INF",
@@ -36,7 +32,7 @@ import org.openide.filesystems.FileUtil;
 )
 public class SpringBootBinaryIndexer extends ConstrainedBinaryIndexer {
 
-    private static final Logger logger = Logger.getLogger(SpringBootBinaryIndexer.class.getName());
+    private static final Logger logger = Logger.getLogger("SpringBootBinaryIndexer");
 
     @Override
     protected void index(Map<String, ? extends Iterable<? extends FileObject>> arg0, Context arg1) {
